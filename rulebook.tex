@@ -157,12 +157,12 @@
 	\section*{F. 3D Printing}
 	\begin{enumerate}
 		\item \textbf{Channel.} All 3D print requests go by email to \ClubEmail.
-		\item \textbf{Printer and materials.} Printer: \textbf{Bambu Lab A1}. Filament stocked: \textbf{PLA} (other filaments might be available).
+		\item \textbf{Printer and materials.} Printer: \textbf{Bambu Lab A1}. Filament stocked: PLA, PLA+, Pla Pro (all the filaments are subject to availability).
 		Maximum build volume: \textbf{25.6\,cm $\times$ 25.6\,cm $\times$ 25.6\,cm};
 		recommended working envelope: \textbf{up to 24\,cm cube} for reliability.
 		\item \textbf{Allowed use.} \textbf{Only scientific/academic project work}. Personal or non-scientific items (door hooks, generic holders, etc.) are \textbf{not allowed}.
 		\item \textbf{Operation.} Printing is performed or supervised by allowed officials or permitted members. \textbf{No unsupervised operation.} Guests/visitors may not request or operate prints.
-		\item \textbf{Models and files.} Prepare in \textbf{Bambu Studio}. \textbf{Sliced output is mandatory}; attach the \textbf{.gcode} file (required).
+		\item \textbf{Models and files.} Email your \textbf{STL/OBJ (or other exported model files)} to club along with your \textbf{name}, \textbf{project name}, and a brief \textbf{reason/justification} for the print. Also specify the \textbf{filament type and colour} you want. The Robotics Club will review the request, may ask for changes or \textbf{decline/cancel} prints that are costly, unsafe, or irrelevant, and (if approved) will return a \textbf{club-sliced} file for the \textbf{Bambu Lab A1} (typically \textbf{.gcode.3mf}). For the step-by-step workflow (request $\rightarrow$ approval $\rightarrow$ sending to printer), see \textbf{Appendix~A}.
 		\item \textbf{Safety near the printer.} \textbf{Do not drill, grind, or solder anywhere near the printer.} Keep the surrounding bench clear; do not touch the machine without permission.
 	\end{enumerate}
 	
@@ -213,4 +213,66 @@
 		\item \textbf{Tamaghna Dey} — \href{mailto:ms24205@iisermohali.ac.in}{ms24205@iisermohali.ac.in} \quad Phone: \texttt{+91 98745 17714}		
 	\end{itemize}
 	
-	\end{document}
+	
+	
+	% ============================================================
+	\clearpage
+	\section*{Appendix A. Using the 3D Printer (Bambu Lab A1): Full Protocol}
+	\label{app:3dprinter}
+	
+	This appendix provides the operational workflow referenced in \textbf{Section~F (3D Printing)}. The intent is to keep slicing settings consistent and safe for the club's standard materials, especially the locally sourced Rajendra's generic PLA, and numakers' PLA+ \& PLA Pro.
+	
+	\subsection*{A1. Submit a print request by email (STL/OBJ only)}
+	\begin{enumerate}
+		\item Email your exported model file(s) (\textbf{.stl}, \textbf{.obj}, or equivalent) to \ClubEmail.
+		\item In the same email, clearly include:
+		\begin{itemize}
+			\item Your \textbf{name} and \textbf{contact details}.
+			\item Your \textbf{project name} (club/campus project) and a short \textbf{reason/justification} for the print (why it is needed).
+			\item Requested \textbf{filament type} and \textbf{colour}. If you are unsure, specify the reason in detail so that club officials can choose the best option.
+			\item Quantity and any deadlines (if applicable). Urgent requests may be declined if they disrupt scheduled club work.
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection*{A2. Club review and approval}
+	\begin{itemize}
+		\item The Robotics Club will review the request for feasibility, cost (time/filament), relevance to scientific/academic project work, and safety.
+		\item If the print is \textbf{costly}, \textbf{irrelevant}, or requires changes (splitting parts, mouse ears, wall thickness, room for expansion, etc.), the club may request modifications or may \textbf{decline/cancel} the print. This is at the club's discretion.
+	\end{itemize}
+	
+	\subsection*{A3. Receive the club-sliced file (do not re-slice)}
+	\begin{enumerate}
+		\item If approved, the club will reply with a \textbf{club-sliced} file intended for the \textbf{Bambu Lab A1}, typically a \textbf{.gcode.3mf} file.
+		\item If your requested filament/colour is available, the reply will also specify the \textbf{spool number / AMS slot} to use.
+		\item \textbf{Multi-filament prints are not allowed} at present. Use a \textbf{single} filament/spool per print.
+		\item The reason the club provides the sliced file is to ensure consistent settings tuned for the club's common PLA variants. Do not modify the file or re-slice with custom settings; request changes by email instead.
+	\end{enumerate}
+	
+	\subsection*{A4. Send the job to the printer (mobile or laptop)}
+	\begin{enumerate}
+		\item Install Bambu Lab app Android/iOS/laptop/desktop.
+		\item Log in using the \textbf{Robotics Club printer account}:
+		\begin{itemize}
+			\item The club email ID and password are written on the \textbf{paper sheet taped on top of the 3D printer}.
+		\end{itemize}
+		\item Connectivity:
+		\begin{itemize}
+			\item Connect to the club room Wi-Fi using the SSID/password, \textbf{or} use mobile data.
+		\end{itemize}
+		\item Upload and send the file:
+		\begin{itemize}
+			\item Upload the received \textbf{.gcode.3mf} file to the Bambu app, select the \textbf{Bambu Lab A1} printer, and send the job.
+			\item Confirm you are sending to the correct printer before starting.
+		\end{itemize}
+		\item Filament setup:
+		\begin{itemize}
+			\item Use the \textbf{spool number / AMS slot} indicated in the club's reply.
+			\item Ensure the AMS slot in use matches the filament specified in the approval email.
+		\end{itemize}
+		\item Start the print and monitor till the first two layers are printed correctly. Do not leave the club room until the printer goes to the 3rd layer.
+	\end{enumerate}
+	
+	\subsection*{A5. If something needs to change}
+	If the print fails, looks incorrect, or you need a design or slicing change, do \textbf{not} experiment with new slicing profiles. Contact robotics club, club will advise or re-slice as needed.
+	
+\end{document}
